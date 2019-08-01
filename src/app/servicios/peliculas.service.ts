@@ -12,7 +12,7 @@ export class PeliculasService {
   constructor(private http: HttpClient) { }
 
   getPopulares() {
-    let url = `${this.urlMoviedb}/movie/popular?api_key=${this.apikey}&language=en-US&page=1`;
+    let url = `${this.urlMoviedb}/movie/popular?api_key=${this.apikey}&language=es&page=1`;
     return this.http.get(url).pipe(
       map(resp => resp)
     );

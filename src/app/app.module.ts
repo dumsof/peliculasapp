@@ -8,6 +8,8 @@ import { PeliculasService } from './servicios/peliculas.service';
 import { HomeComponent } from './components/home/home.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
+/* rutas de la aplicación */
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { BuscarComponent } from './components/buscar/buscar.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    RouterModule
   ],
   providers: [PeliculasService],
   bootstrap: [AppComponent]
